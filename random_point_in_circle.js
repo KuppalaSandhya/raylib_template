@@ -13,7 +13,7 @@ function getRandomPointsofX(startX, startY, radius) {
   const array = [];
   for (let i = 0; i < 10; i++) {
     const distance = Math.random() * radius;
-    const angle = Math.random() * 360;
+    const angle = Math.random() * 90;
     const coOrdinateX = startX + distance * Math.cos(convertToRadians(angle));
     const coOrdinateY = startY + distance * Math.sin(convertToRadians(angle));
 
@@ -26,8 +26,8 @@ function setup() {
   const width = 800;
   const height = 600;
 
-  const centerX = 400;
-  const centerY = 200;
+  const centerX = 0;
+  const centerY = 0;
   const radius = 150;
 
   const randomArray = getRandomPointsofX(centerX, centerY, radius);
@@ -69,7 +69,8 @@ function teardown() {
 }
 
 function main() {
-  w = setup();
+  const w = setup();
+  console.log(w);
   loop(w);
   teardown();
 }

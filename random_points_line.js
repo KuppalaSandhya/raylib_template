@@ -50,7 +50,7 @@ function teardown() {
 }
 
 function main() {
-  array = setup();
+  const array = setup();
   loop(array);
   teardown();
 }
