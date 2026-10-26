@@ -70,7 +70,6 @@ function teardown() {
 
 function main() {
   w = setup();
-  console.log(w);
   loop(w);
   teardown();
 }
